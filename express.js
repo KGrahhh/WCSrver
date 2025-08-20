@@ -95,10 +95,9 @@ app.post('/upload', (req, res) => {
       return res.status(400).send('No file uploaded');
     }
 
-    console.log(`Username: ${username}`);
     console.log(`File Path: ${uploadedFile.path}`);
 
-    res.end('File and form uploaded successfully');
+    res.end('File uploaded successfully');
   });
 });
 
