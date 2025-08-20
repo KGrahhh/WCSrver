@@ -29,7 +29,7 @@ app.get('/', (req, res) => { res.sendFile(__dirname + '/pages/home.html'); });
 app.get('/userPage', (req, res) => { res.sendFile(__dirname + '/pages/user.html'); });
 app.get('/studentPage', (req, res) => { res.sendFile(__dirname + '/pages/student.html'); });
 
-// ✅ fixed: allow both /adminPage and /admin
+
 app.get('/admin', (req, res) => { res.sendFile(__dirname + '/pages/admin.html'); });
 app.get('/adminPage', (req, res) => { res.sendFile(__dirname + '/pages/admin.html'); });
 
