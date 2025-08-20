@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="/styles.css"> 
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Page</h2>
+        <form action="/getAdmin" method="GET" class="login-form">
+            <label for="adminID">Admin ID:</label>
+            <input type="text" id="adminID" name="adminID" required>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <!-- Upload form -->
+        <h3>Upload File</h3>
+        <form action="/upload" method="POST" enctype="multipart/form-data" class="upload-form">
+            <label for="file">Choose File:</label>
+            <input type="file" id="file" name="file" required>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
